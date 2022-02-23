@@ -20,6 +20,11 @@ public class PlayerMovement : MonoBehaviour
     private GameObject mainCamera;
     private Animator playerAnimator;
 
+    public float GetSpeed()
+    {
+        return movementSpeed;
+    }
+
     void Start()
     {
         mainCamera = GameObject.FindGameObjectWithTag("MainCamera");

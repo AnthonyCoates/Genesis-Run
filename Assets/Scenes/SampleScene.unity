@@ -658,23 +658,6 @@ Transform:
   m_Father: {fileID: 61829001}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &909743895 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 876225539263074726, guid: 04b6245881c3615499a8a15935c2b72a, type: 3}
-  m_PrefabInstance: {fileID: 4160071540390849741}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &909743896
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 909743895}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df512732c5c1a97418ec8f696e8ed4b2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &944389228
 GameObject:
   m_ObjectHideFlags: 0
@@ -1256,6 +1239,54 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 909743897, guid: 04b6245881c3615499a8a15935c2b72a, type: 3}
+      propertyPath: backgroundsBack.Array.data[0]
+      value: 
+      objectReference: {fileID: 1585228714}
+    - target: {fileID: 909743897, guid: 04b6245881c3615499a8a15935c2b72a, type: 3}
+      propertyPath: backgroundsBack.Array.data[1]
+      value: 
+      objectReference: {fileID: 797498213}
+    - target: {fileID: 909743897, guid: 04b6245881c3615499a8a15935c2b72a, type: 3}
+      propertyPath: backgroundsBack.Array.data[2]
+      value: 
+      objectReference: {fileID: 255844888}
+    - target: {fileID: 909743897, guid: 04b6245881c3615499a8a15935c2b72a, type: 3}
+      propertyPath: backgroundsFront.Array.data[0]
+      value: 
+      objectReference: {fileID: 962721828}
+    - target: {fileID: 909743897, guid: 04b6245881c3615499a8a15935c2b72a, type: 3}
+      propertyPath: backgroundsFront.Array.data[1]
+      value: 
+      objectReference: {fileID: 944389228}
+    - target: {fileID: 909743897, guid: 04b6245881c3615499a8a15935c2b72a, type: 3}
+      propertyPath: backgroundsFront.Array.data[2]
+      value: 
+      objectReference: {fileID: 110356266}
+    - target: {fileID: 909743897, guid: 04b6245881c3615499a8a15935c2b72a, type: 3}
+      propertyPath: backgroundsMiddle.Array.data[0]
+      value: 
+      objectReference: {fileID: 1464343330}
+    - target: {fileID: 909743897, guid: 04b6245881c3615499a8a15935c2b72a, type: 3}
+      propertyPath: backgroundsMiddle.Array.data[1]
+      value: 
+      objectReference: {fileID: 1504485130}
+    - target: {fileID: 909743897, guid: 04b6245881c3615499a8a15935c2b72a, type: 3}
+      propertyPath: backgroundsMiddle.Array.data[2]
+      value: 
+      objectReference: {fileID: 2034046807}
+    - target: {fileID: 909743897, guid: 04b6245881c3615499a8a15935c2b72a, type: 3}
+      propertyPath: backgroundsObjects.Array.data[0]
+      value: 
+      objectReference: {fileID: 2085444677}
+    - target: {fileID: 909743897, guid: 04b6245881c3615499a8a15935c2b72a, type: 3}
+      propertyPath: backgroundsObjects.Array.data[1]
+      value: 
+      objectReference: {fileID: 313572504}
+    - target: {fileID: 909743897, guid: 04b6245881c3615499a8a15935c2b72a, type: 3}
+      propertyPath: backgroundsObjects.Array.data[2]
+      value: 
+      objectReference: {fileID: 332297411}
     - target: {fileID: 876225539263074726, guid: 04b6245881c3615499a8a15935c2b72a, type: 3}
       propertyPath: m_Name
       value: Sama
