@@ -8,8 +8,8 @@ public class PlayerMovement : MonoBehaviour
     private bool isFalling = false;
 
     private float movementSpeed = 5f;
-    private const float maxSpeed = 25f;
-    private const float increaseSpeed = 1f;
+    private const float maxSpeed = 20f;
+    private const float increaseSpeed = 0.5f;
 
     private const float jumpSpeed = 10f;
     private const float fallSpeed = 7f;
@@ -25,7 +25,12 @@ public class PlayerMovement : MonoBehaviour
         return movementSpeed;
     }
 
-    void Start()
+    public float GetGroundHeight()
+    {
+        return groundHeight;
+    }
+
+    void Awake()
     {
         mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
         playerAnimator = GetComponent<Animator>();
@@ -37,6 +42,8 @@ public class PlayerMovement : MonoBehaviour
     {
         MovePlayer();
         JumpPlayer();
+
+        playerAnimator.SetFloat("speed", movementSpeed / 10f);
     }
 
     private void MovePlayer()

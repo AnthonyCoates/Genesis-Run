@@ -15,7 +15,7 @@ public class BackgroundMovement : MonoBehaviour
 
     private PlayerMovement playerMovement;
 
-    private void Start()
+    private void Awake()
     {
         playerMovement = GetComponent<PlayerMovement>();
     }
