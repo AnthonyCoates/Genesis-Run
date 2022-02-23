@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Broccoli
   - Steak
+  - ScoreKeeper
   layers:
   - Default
   - TransparentFX

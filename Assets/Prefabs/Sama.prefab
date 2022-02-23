@@ -249,6 +249,8 @@ MonoBehaviour:
   nomSFX: {fileID: 8300000, guid: 841518544ffa7c64886308603b81030c, type: 3}
   blechSFX: {fileID: 8300000, guid: 353f92c9226ea774c9b7d549a6c6df4e, type: 3}
   volumeFX: 1
+  scoreTXT: {fileID: 0}
+  livesTXT: {fileID: 0}
 --- !u!82 &909743904
 AudioSource:
   m_ObjectHideFlags: 0

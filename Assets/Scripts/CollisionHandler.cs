@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class CollisionHandler : MonoBehaviour
 {
@@ -9,6 +10,9 @@ public class CollisionHandler : MonoBehaviour
 
     private AudioSource audioSource;
     public float volumeFX = 1f;
+
+    public TextMeshProUGUI scoreTXT;
+    public TextMeshProUGUI livesTXT;
 
     private ScoreKeeper sk;
 
@@ -23,10 +27,16 @@ public class CollisionHandler : MonoBehaviour
     {
         if (collision.gameObject.tag == "Broccoli")
         {
+            sk.AdjustLives(-1);
+            livesTXT.text = "Tastebuds: " + sk.GetLives();
+
             audioSource.PlayOneShot(blechSFX, volumeFX);
         }
         else if (collision.gameObject.tag == "Steak")
         {
+            sk.AdjustScore(75);
+            scoreTXT.text = "Protein: " + sk.GetScore() + "g";
+
             audioSource.PlayOneShot(nomSFX, volumeFX);
         }
 
